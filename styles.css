@@ -11,13 +11,16 @@ ul.tier-contents {
 	list-style: none;
 	padding: 0;
 	width: 100%;
+
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 ul.tier-contents li {
-	padding: 15px;
+	padding: 0;
 	display: inline-block;
-	height: 500px;
-	width: 500px;
+	height: 250px;
+	width: 250px;
 	position: relative;
 }
 
