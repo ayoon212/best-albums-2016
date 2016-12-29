@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'San Francisco';
+	src: url('assets/fonts/SF-UI-Text-Regular.otf');
+}
+
+body {
+	font-family: "San Francisco", sans-serif;
+}
+
+ul.tier-contents {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	display: flex;
+}
+ul.tier-contents li {
+	padding: 15px;
+	display: inline-block;
+	height: 500px;
+	width: 500px;
+	position: relative;
+}
+
+.cover {
+	height: 100%;
+	width: 100%;
+}
+.label {
+	background-color: rgba(199, 60, 81, 0.5);
+	text-align: center;
+	display: none;
+	position: absolute;
+	top:0; left:0; right:0; bottom:0;
+}
