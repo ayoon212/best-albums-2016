@@ -4,4 +4,8 @@ $(document).ready(function() {
 	}, function(event) {
 		$(event.currentTarget).children('.label').hide();
 	});
+
+	window.setInterval(function() {
+		$('.wrapper').toggleClass('inverted');
+	}, 322);
 });
