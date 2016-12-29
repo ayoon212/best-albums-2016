@@ -5,6 +5,45 @@
 
 body {
 	font-family: "San Francisco", sans-serif;
+	margin: 0;
+	margin-top: 95px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 0;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,dadae9+66 */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #dadae9 66%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#dadae9 66%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #eeeeee 0%,#dadae9 66%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dadae9',GradientType=1 ); /* IE6-9 */
+}
+@media (min-width: 667px) {
+	body {
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+}
+
+.hero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 85px;
+	background-color: rgba(188,188,188,0.8);
+}
+.title-container {
+	width: 66%;
+	margin: 0 auto;
+}
+.title {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.subtitle {
+	margin: 0;
+	font-size: 1.0em;
 }
 
 ul.tier-contents {
@@ -22,16 +61,56 @@ ul.tier-contents li {
 	height: 250px;
 	width: 250px;
 	position: relative;
+	cursor: pointer;
 }
 
 .cover {
 	height: 100%;
 	width: 100%;
+	background-size: contain !important;
 }
 .label {
-	background-color: rgba(199, 60, 81, 0.5);
+	background-color: rgba(166, 166, 233, 0.65);
 	text-align: center;
 	display: none;
 	position: absolute;
 	top:0; left:0; right:0; bottom:0;
+}
+
+/* Album Images */
+.anderson-paak {
+	background: url("assets/images/anderson-paak-malibu.jpg") 0 0 no-repeat;
+}
+.animals-as-leaders {
+	background: url("assets/images/animals-as-leaders-madness.jpg") 0 0 no-repeat;
+}
+.bill-laurance {
+	background: url("assets/images/bill-laurance-live.jpg") 0 0 no-repeat;
+}
+.terrace-martin {
+	background: url("assets/images/terrace-martin-velvet.jpg") 0 0 no-repeat;
+}
+.a-tribe-called-quest {
+	background: url("assets/images/a-tribe-called-quest-we-got-it.jpg") 0 0 no-repeat;
+}
+.bon-iver {
+	background: url("assets/images/bon-iver-22-million.jpg") 0 0 no-repeat;
+}
+.childish-gambino {
+	background: url("assets/images/childish-gambino-awaken.jpg") 0 0 no-repeat;
+}
+.plini {
+	background: url("assets/images/plini-handmade.jpg") 0 0 no-repeat;
+}
+.snarky-puppy {
+	background: url("assets/images/snarky-puppy-culcha-vulcha.jpg") 0 0 no-repeat;
+}
+.sithu-aye {
+	background: url("assets/images/sithu-aye-andromeda.jpg") 0 0 no-repeat;
+}
+.the-suffers {
+	background: url("assets/images/the-suffers.jpg") 0 0 no-repeat;
+}
+.fleetwood-mac {
+	background: url("assets/images/fleetwood-mac-rumours.jpg") 0 0 no-repeat;
 }
