@@ -2,29 +2,58 @@
 	font-family: 'San Francisco';
 	src: url('assets/fonts/SF-UI-Text-Regular.otf');
 }
+@font-face {
+	font-family: 'San Francisco Heavy';
+	src: url('assets/fonts/SF-UI-Text-Heavy.otf');
+}
+@font-face {
+	font-family: 'San Francisco Heavy Italic';
+	src: url('assets/fonts/SF-UI-Text-HeavyItalic.otf');
+}
 
 body {
 	font-family: "San Francisco", sans-serif;
 	padding: 0;
 	margin: 0;
+	background-color: #2a2a2a;
 }
 
-.wrapper {
-	height: 100%;
-	width: 100%;
-}
-.wrapper:after {
-	content: "";
+.hero-bg {
 	position: absolute;
-	top: 0; left: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+	background-color: rgba(188,188,188,0.8);
+	animation: strobe-pretty 1.5s infinite;
+	color: #fff;
+}
+.hero {
 	width: 100%;
 	height: 100%;
-	background: url('assets/images/childish-gambino-awaken.jpg') 0 0 repeat;
-	z-index: -1;
+	border: 18px dashed #fff;
+	transform: translate(35px, 54px);
 }
-.wrapper.inverted:after {
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
+
+.title-container {
+	width: 88%;
+	margin-left: 10%;
+}
+.title {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-family: 'San Francisco Heavy';
+	font-size: 10em;
+}
+.subtitle {
+	margin: 0;
+	font-family: 'San Francisco Heavy Italic';
+	font-size: 1.0em;
+}
+
+/* TODO : albums style */
+.tier-list {
+	display: none;
 }
 
 ul.tier-contents {
@@ -51,4 +80,82 @@ ul.tier-contents li {
 	display: none;
 	position: absolute;
 	top:0; left:0; right:0; bottom:0;
+}
+
+/* Keyframes */
+@keyframes strobe-adhd {
+	0% {
+		/*background-color: #c00;*/
+		transform: translate(0,0);
+	}
+
+	25% {
+		/*background-color: #c0c;*/
+		transform: translate(50px,25px);
+	}
+
+	50% {
+		/*background-color: #0cc;*/
+		transform: translate(-45px,-45px);
+	}
+
+	100% {
+		/*background-color: #c00;*/
+		transform: translate(10px,-5px);
+	}
+}
+@keyframes strobe-pretty {
+	0% {
+		background-color: #0aa;
+	}
+
+	25% {
+		background-color: #0a0;
+	}
+
+	50% {
+		background-color: #aa0;
+	}
+
+	100% {
+		background-color: #0aa;
+	}
+}
+
+/* Album Images */
+.anderson-paak {
+	background: url("assets/images/anderson-paak-malibu.jpg") 0 0 no-repeat;
+}
+.animals-as-leaders {
+	background: url("assets/images/animals-as-leaders-madness.jpg") 0 0 no-repeat;
+}
+.bill-laurance {
+	background: url("assets/images/bill-laurance-live.jpg") 0 0 no-repeat;
+}
+.terrace-martin {
+	background: url("assets/images/terrace-martin-velvet.jpg") 0 0 no-repeat;
+}
+.a-tribe-called-quest {
+	background: url("assets/images/a-tribe-called-quest-we-got-it.jpg") 0 0 no-repeat;
+}
+.bon-iver {
+	background: url("assets/images/bon-iver-22-million.jpg") 0 0 no-repeat;
+}
+.childish-gambino {
+	background: url("assets/images/childish-gambino-awaken.jpg") 0 0 no-repeat;
+}
+.plini {
+	background: url("assets/images/plini-handmade.jpg") 0 0 no-repeat;
+}
+.snarky-puppy {
+	background: url("assets/images/snarky-puppy-culcha-vulcha.jpg") 0 0 no-repeat;
+}
+.sithu-aye {
+	background: url("assets/images/sithu-aye-andromeda.jpg") 0 0 no-repeat;
+}
+.the-suffers {
+	background: url("assets/images/the-suffers.jpg") 0 0 no-repeat;
+}
+.fleetwood-mac {
+	background: url("assets/images/fleetwood-mac-rumours.jpg") 0 0 no-repeat;
 }
